@@ -1,16 +1,65 @@
-# React + Vite
+# React Formik & Yup Practice
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a practice task demonstrating how to handle form state and validation in React using **Formik** and **Yup**. It features two main authentication forms (Login and Sign Up) with comprehensive client-side validation and a responsive UI.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Sign Up Form:** Collects user's first name, last name, email, and password.
+- **Login Form:** Collects user's email and password. Built with utility classes using Tailwind CSS.
+- **Validation:**
+  - Required fields checking
+  - Email format validation
+  - Password minimum length enforcement (minimum 6 characters)
+- **Routing:** Navigation between Login and Sign Up pages using React Router.
 
-## React Compiler
+## Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **[React](https://react.dev/)**: Frontend library for building the UI.
+- **[Vite](https://vitejs.dev/)**: Next-generation frontend tooling for rapid development.
+- **[Formik](https://formik.org/)**: For building and managing form state and submissions.
+- **[Yup](https://github.com/jquense/yup)**: Object schema validation for form field validation rules.
+- **[Tailwind CSS](https://tailwindcss.com/)**: Utility-first CSS framework (used in the Login form).
+- **[React Router](https://reactrouter.com/)**: Declarative routing for React single-page applications.
 
-## Expanding the ESLint configuration
+## Live Demo
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Getting Started
+
+### Prerequisites
+
+Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone <repository-url>
+   ```
+
+2. Navigate into the project directory:
+
+   ```bash
+   cd formik-react
+   ```
+
+3. Install the dependencies:
+   ```bash
+   npm install
+   ```
+
+### Running the App Locally
+
+To start the development server, run:
+
+```bash
+npm run dev
+```
+
+Open [http://localhost:5173](http://localhost:5173) to view it in the browser.
+
+## Project Structure
+
+- `src/pages/SignUp.jsx`: The sign-up form component using Formik and custom CSS (`src/index.css`).
+- `src/pages/Login.jsx`: The login form component using Formik and Tailwind CSS.
+- `src/App.jsx`: Main application component that likely sets up the React Router definitions.
